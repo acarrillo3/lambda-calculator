@@ -6,6 +6,7 @@ import "./App.css";
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display />
+        <Display number={0} />
         <Numbers /> 
+        <Operators />
       </div>
     </div>
   );
